@@ -46,9 +46,8 @@ Conflicts:      unifi-controller
 Provides:       bundled(lato-fonts-web)
 Provides:       bundled(ubnt-fonts)
 
-# Bundled java ;obraries
-# This needs to be automated!
-
+# Bundled java libraries
+### BEGIN AUTOMATION ###
 Provides:       bundled(annotations) = 3.0.1
 Provides:       bundled(aws-java-sdk-cloudwatch) = 1.11.409
 Provides:       bundled(aws-java-sdk-core) = 1.11.409
@@ -102,6 +101,7 @@ Provides:       bundled(tomcat-embed-jasper) = 8.5.34
 Provides:       bundled(tomcat-embed-logging-juli) = 8.5.2
 Provides:       bundled(tomcat-embed-logging-log4j) = 8.5.2
 Provides:       bundled(urlrewritefilter) = 4.0.4
+### END AUTOMATION ###
 
 # So you can prevent automatic updates.
 %if 0%{?fedora}
